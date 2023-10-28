@@ -6,6 +6,7 @@ public class PaperDecorator extends ItemDecorator {
     private final Item item;
 
     public PaperDecorator(Item item) {
+        super(item.getDescription());
         this.item = item;
     }
 

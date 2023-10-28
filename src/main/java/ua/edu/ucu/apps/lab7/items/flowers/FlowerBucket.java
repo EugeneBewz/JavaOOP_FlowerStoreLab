@@ -6,15 +6,15 @@ import java.util.List;
 import ua.edu.ucu.apps.lab7.items.Item;
 
 public class FlowerBucket extends Item {
-    private List<FlowerPack> flowerPacks = new ArrayList<>();
+    private final List<FlowerPack> flowerPacks = new ArrayList<>();
 
-    public FlowerBucket() {
+    protected FlowerBucket(String description) {
         super(description);
     }
 
     @Override
     public double price() {
-        int price = 0;
+        double price = 0;
         for (FlowerPack flowerPack : flowerPacks) {
             price += flowerPack.getPrice();
         }
