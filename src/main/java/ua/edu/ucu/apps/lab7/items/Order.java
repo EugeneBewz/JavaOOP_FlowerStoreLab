@@ -9,9 +9,13 @@ import ua.edu.ucu.apps.lab7.payment_strategy.CreditCardPaymentStrategy;
 import ua.edu.ucu.apps.lab7.payment_strategy.PayPalPaymentStrategy;
 
 public class Order {
-    private LinkedList<Item> items;
+    private final LinkedList<Item> items;
     private Payment payment;
     private Delivery delivery;
+
+    public Order(LinkedList<Item> items) {
+        this.items = items;
+    }
 
     public void setPaymentStrategy(Payment paymentStrategy) {
         this.payment = paymentStrategy;
