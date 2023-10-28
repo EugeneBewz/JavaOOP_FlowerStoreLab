@@ -5,7 +5,11 @@ import java.util.List;
 import ua.edu.ucu.apps.lab7.items.Item;
 
 public class DHLDeliveryStrategy implements Delivery {
-    private String address;
+    private final String address;
+
+    public DHLDeliveryStrategy(String address) {
+        this.address = address;
+    }
 
     @Override
     public void deliver(List<Item> items) {

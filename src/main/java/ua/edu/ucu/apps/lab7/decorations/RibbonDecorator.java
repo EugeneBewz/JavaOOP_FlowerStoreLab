@@ -16,7 +16,7 @@ public class RibbonDecorator extends ItemDecorator {
 
     public String getDescription() {
         return item.getDescription();
-    };
+    }
 
     @Override
     public double price() {

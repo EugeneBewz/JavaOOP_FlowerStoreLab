@@ -5,8 +5,14 @@ import java.util.List;
 import ua.edu.ucu.apps.lab7.items.Item;
 
 public class PostDeliveryStrategy implements Delivery{
-    private String address;
-    private String postOfficeNo;
+    private final String address;
+    private final String postOfficeNo;
+
+    public PostDeliveryStrategy(String address,
+                                String postOfficeNo) {
+        this.address = address;
+        this.postOfficeNo = postOfficeNo;
+    }
 
     @Override
     public void deliver(List<Item> items) {

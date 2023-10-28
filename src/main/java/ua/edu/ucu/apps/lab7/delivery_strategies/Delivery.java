@@ -4,5 +4,5 @@ import java.util.List;
 import ua.edu.ucu.apps.lab7.items.Item;
 
 public interface Delivery {
-    abstract void deliver(List<Item> items);
+    void deliver(List<Item> items);
 }

@@ -4,7 +4,7 @@ import lombok.Getter;
 
 @Getter
 public class FlowerPack {
-    private Flower flower;
+    private final Flower flower;
     public int quantity;
 
     public FlowerPack(Flower flower, int quantity) {
