@@ -27,9 +27,9 @@ public class Order {
 
     public double calculateTotalPrice() {
         if (this.payment instanceof PayPalPaymentStrategy) {
-            // TODO
+            System.out.println("You paid with PayPal");
         } else if (this.payment instanceof CreditCardPaymentStrategy) {
-            // TODO
+            System.out.println("You paid with your credit card");
         }
         return 0;
     }
